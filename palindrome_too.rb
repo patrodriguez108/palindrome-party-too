@@ -8,9 +8,13 @@ def min_cut(s)
 	palindrome = ""
 	i = 0
 	while i < s.length
-		p palindrome += s[i]
+		palindrome += s[i]
+		if palindrome == palindrome.reverse
+			p palindrome
+		end
 		i += 1
 	end
+	p palindromes
 end
 
 # example
